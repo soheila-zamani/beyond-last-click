@@ -26,7 +26,7 @@
 
 ## 🎯 Business Question
 
-> Which marketing channel — influencer content or paid advertising — drives higher performance value in e-commerce? And does influencer size (tier) and content niche make a measurable difference in engagement efficiency?
+> How do influencer engagement efficiency and paid-ad conversion performance each behave in e-commerce — and what do those patterns suggest about last-click attribution bias?
 
 ---
 
@@ -34,8 +34,7 @@
 
 Most e-commerce brands measure marketing success using **last-click attribution** — giving all the credit to the last channel a customer touched before buying. This systematically undervalues influencer content, which often starts the customer journey but rarely gets the final click.
 
-This project analyses real data to build a more complete picture of channel performance — comparing influencer engagement efficiency across tiers and niches, and testing whether paid advertising converts significantly better than organic.
-
+This project analyses two real datasets to test that concern from two angles: how efficiently influencer content generates engagement across tiers and niches, and whether paid advertising converts significantly better than organic. Together, the findings suggest last-click bias is a real risk worth pricing into channel decisions — see Limitations for exactly what this data can and can't prove.
 ---
 
 ## 📊 Datasets
@@ -83,6 +82,11 @@ All 3,848 channels mapped by VPS × recency (30-day activity threshold):
 - Median VPS: **2.89** — 3.3× the nano average
 - Top combinations: Nano × Fashion (1.777), Nano × Shopping (1.097), Nano × Travel (0.951)
 
+## ⚠️ Limitations
+
+The YouTube dataset and the A/B test dataset come from different users, products, and platforms — they don't share a customer journey, so this project does **not** compute or compare formal attribution models (last-click vs. linear vs. time-decay vs. data-driven) on the same conversions. Each dataset is analyzed on its own terms, with its own hypothesis tests.
+
+What this project *does* show: two independently rigorous findings — influencer engagement efficiency and paid-ad conversion lift — that together make a data-informed case for questioning last-click bias, rather than a validated attribution model. A natural next step (not yet built) would be sourcing journey-level, multi-touchpoint data to test that case directly.
 ---
 
 ## 🛠️ Tech Stack
