@@ -9,8 +9,7 @@
 
 ## Business Question
 
-> Which marketing channel — influencer content or paid advertising — drives higher performance value in e-commerce?
-> And does influencer size (tier) and content niche make a measurable difference in engagement efficiency?
+> How do influencer engagement efficiency and paid-ad conversion performance each behave in e-commerce — and what do those patterns suggest about last-click attribution bias?
 
 ---
 
@@ -73,7 +72,7 @@
 - **Test:** Chi-square test for proportions
 - **Result:** Confirmed — Paid: 2.55% · Organic: 1.79% → **+43% conversion lift**
 - **Significance:** p < 0.001
-- **Why it matters:** Quantifies the value of paid advertising vs organic reach. Confirms that paid ads are worth the investment at the moment of conversion — while influencer content does the earlier awareness work.
+- **Why it matters:** Quantifies the value of paid advertising vs organic reach. Confirms that paid ads are worth the investment at the moment of conversion. (Whether influencer content does the earlier awareness work is this project's working hypothesis, not something the A/B test data itself tests — see the Methodology Note below.)
 
 ---
 
@@ -114,7 +113,7 @@
 | Paid advertising | A/B Testing — "ad" group | Conversion rate = 2.55% |
 | Organic content | A/B Testing — "psa" group | Conversion rate = 1.79% |
 
-**The bridge:** Paid ads convert 43% better than organic at the moment of decision. Nano influencers deliver 2.7× more engagement per subscriber in the awareness phase. Last-click attribution credits the ad and ignores the influencer — which is exactly the problem this project addresses.
+**The proposed bridge (not directly tested):** Paid ads convert 43% better than organic at the moment of decision. Nano influencers deliver 2.7× more engagement per subscriber, which this project treats as a proxy for awareness-stage value. The working hypothesis is that last-click attribution credits the ad and undervalues the influencer — but since the two datasets don't share a customer journey, this is an argument the findings support, not something proven directly. See the Methodology Note below.
 
 ---
 
