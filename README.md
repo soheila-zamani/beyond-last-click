@@ -10,7 +10,7 @@
 ## 🔑 Key Findings
 
 - **Nano creators deliver 2.7× the engagement per subscriber** of mega creators (Kruskal-Wallis, p < 0.001)
-- **Paid ads convert at 1.4× the rate of organic** — +43% lift, statistically significant on 588K users (chi-square)
+- **Users who saw the ad convert at 1.4× the rate of the control group** — +43% lift, statistically significant on 588K users (chi-square)
 - **Saturday 5–7am and Monday–Tuesday 14–16:00** are the highest-converting time windows
 - **Brazil, Turkey, and South Africa** lead median engagement among the 24 countries with at least 10 channels (channels with 1,000+ subscribers) — markets worth testing in influencer plans
 
@@ -34,7 +34,7 @@
 
 Most e-commerce brands measure marketing success using **last-click attribution** — giving all the credit to the last channel a customer touched before buying. This systematically undervalues influencer content, which often starts the customer journey but rarely gets the final click.
 
-This project analyses two real datasets to test that concern from two angles: how efficiently influencer content generates engagement across tiers and niches, and whether paid advertising converts significantly better than organic. Together, the findings suggest last-click bias is a real risk worth pricing into channel decisions — see [Limitations](#-limitations) for exactly what this data can and can't prove.
+This project analyses two real datasets to test that concern from two angles: how efficiently influencer content generates engagement across tiers and niches, and whether users who see a paid ad convert significantly better than a control group. Together, the findings suggest last-click bias is a real risk worth pricing into channel decisions — see [Limitations](#-limitations) for exactly what this data can and can't prove.
 
 ---
 
@@ -43,7 +43,7 @@ This project analyses two real datasets to test that concern from two angles: ho
 | # | Dataset | Source | Rows | Scope |
 |---|---|---|---|---|
 | 1 | YouTube Influencer Dataset | YouTube Data API v3 | 7,281 raw → **3,848 filtered** | 4 tiers, 9 niches, 71 countries |
-| 2 | Marketing A/B Test | Kaggle (FavioVázquez) | **588,101 users** | Paid ad vs organic conversion |
+| 2 | Marketing A/B Test | Kaggle (FavioVázquez) | **588,101 users** | Ad vs control (PSA) conversion |
 
 > ⚠️ Data files are not uploaded to GitHub. See `02_Datasets/README.md` for sources and reproduction steps.
 >
@@ -58,7 +58,7 @@ This project analyses two real datasets to test that concern from two angles: ho
 | H1 | Nano influencers outperform mega on engagement efficiency | YouTube | Kruskal-Wallis | ✅ **2.7× advantage** — Nano VPS 0.884 vs Mega 0.326 (p = 9.21e-263) |
 | H2 | Engagement varies significantly across content niches | YouTube | Kruskal-Wallis | ✅ Fashion leads (median VPS 0.71), Fitness lowest |
 | H3 | Subscriber count negatively correlates with engagement | YouTube | Spearman + Regression | ✅ r = −0.51, every 10× size increase → −41% VPS |
-| H4 | Paid ads convert at a higher rate than organic | A/B Test | Chi-square | ✅ **+43% lift** — 2.55% vs 1.79% (causal, randomised) |
+| H4 | Users who see the ad convert at a higher rate than the control group | A/B Test | Chi-square | ✅ **+43% lift** — 2.55% vs 1.79% (causal, randomised) |
 | H5 *(bonus)* | Geographic origin affects influencer engagement | YouTube | Median by Country | ✅ Brazil (1.12), Turkey (0.79), South Africa (0.75) lead |
 | H6 *(bonus)* | Conversion rate varies by time of day and day of week | A/B Test | Conversion heatmap | ✅ Saturday 5am (5.68%), Mon–Tue 14–16:00 consistently strong |
 

@@ -18,7 +18,7 @@
 | Dataset | Source | Rows | What it covers |
 |---|---|---|---|
 | YouTube Influencer Data | YouTube Data API v3 — collected by me | **3,848 channels** (after filter) | All 4 tiers · 9 niches · 71 countries |
-| Marketing A/B Testing | Kaggle (FavioVázquez) — real marketing campaign A/B test | 588,101 real users | Paid vs Organic conversion rates |
+| Marketing A/B Testing | Kaggle (FavioVázquez) — real marketing campaign A/B test | 588,101 real users | Ad vs control (PSA) conversion rates |
 
 > Filter applied: `subscribers ≥ 1,000` (industry-standard nano tier lower bound). Ensures all channels represent real, discoverable creators.
 
@@ -63,16 +63,16 @@
 
 ---
 
-### H4 — Paid Advertising vs Organic Conversion
+### H4 — Ad Exposure vs Control Conversion
 **"Users exposed to a paid advertisement convert at a statistically significantly higher rate than users who saw no paid ad."**
 
 - **Metric:** Conversion rate (converted = True)
 - **Dataset:** Marketing A/B Testing (588,101 users)
-- **Groups:** "ad" group (paid) vs "psa" group (organic baseline)
+- **Groups:** "ad" group (paid) vs "psa" group (control: saw a public service announcement instead of the ad)
 - **Test:** Chi-square test for proportions
-- **Result:** Confirmed — Paid: 2.55% · Organic: 1.79% → **+43% conversion lift**
+- **Result:** Confirmed — Ad group: 2.55% · Control (PSA): 1.79% → **+43% conversion lift**
 - **Significance:** p < 0.001
-- **Why it matters:** Quantifies the value of paid advertising vs organic reach. Confirms that paid ads are worth the investment at the moment of conversion. (Whether influencer content does the earlier awareness work is this project's working hypothesis, not something the A/B test data itself tests — see the Methodology Note below.)
+- **Why it matters:** Quantifies the value of paid advertising vs a control group. Confirms that paid ads are worth the investment at the moment of conversion. (Whether influencer content does the earlier awareness work is this project's working hypothesis, not something the A/B test data itself tests — see the Methodology Note below.)
 
 ---
 
@@ -111,9 +111,9 @@
 | Influencer (nano) | YouTube API | `view_per_subscriber` = 0.884 median |
 | Influencer (mega) | YouTube API | `view_per_subscriber` = 0.326 median |
 | Paid advertising | A/B Testing — "ad" group | Conversion rate = 2.55% |
-| Organic content | A/B Testing — "psa" group | Conversion rate = 1.79% |
+| Control group (PSA) | A/B Testing — "psa" group | Conversion rate = 1.79% |
 
-**The proposed bridge (not directly tested):** Paid ads convert 43% better than organic at the moment of decision. Nano influencers deliver 2.7× more engagement per subscriber, which this project treats as a proxy for awareness-stage value. The working hypothesis is that last-click attribution credits the ad and undervalues the influencer — but since the two datasets don't share a customer journey, this is an argument the findings support, not something proven directly. See the Methodology Note below.
+**The proposed bridge (not directly tested):** Paid ads convert 43% better than the control group at the moment of decision. Nano influencers deliver 2.7× more engagement per subscriber, which this project treats as a proxy for awareness-stage value. The working hypothesis is that last-click attribution credits the ad and undervalues the influencer — but since the two datasets don't share a customer journey, this is an argument the findings support, not something proven directly. See the Methodology Note below.
 
 ---
 
