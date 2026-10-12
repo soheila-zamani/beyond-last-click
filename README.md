@@ -12,7 +12,7 @@
 - **Nano creators deliver 2.7× the engagement per subscriber** of mega creators (Kruskal-Wallis, p < 0.001)
 - **Users who saw the ad convert at 1.4× the rate of the control group** — +43% lift, statistically significant on 588K users (chi-square)
 - **Saturday 5–7am and Monday–Tuesday 14–16:00** are the highest-converting time windows
-- **Brazil, Turkey, and South Africa** lead median engagement among the 24 countries with at least 10 channels (channels with 1,000+ subscribers) — markets worth testing in influencer plans
+- **Brazil, Turkey, and Italy** lead median engagement among the 24 countries with at least 10 channels (channels with 1,000+ subscribers) — markets worth testing in influencer plans
 
 ---
 
@@ -59,7 +59,7 @@ This project analyses two real datasets to test that concern from two angles: ho
 | H2 | Engagement varies significantly across content niches | YouTube | Kruskal-Wallis | ✅ Fashion leads (median VPS 0.71), Fitness lowest |
 | H3 | Subscriber count negatively correlates with engagement | YouTube | Spearman + Regression | ✅ r = −0.51, every 10× size increase → −41% VPS |
 | H4 | Users who see the ad convert at a higher rate than the control group | A/B Test | Chi-square | ✅ **+43% lift** — 2.55% vs 1.79% (causal, randomised) |
-| H5 *(bonus)* | Geographic origin affects influencer engagement | YouTube | Median by Country | ✅ Brazil (1.12), Turkey (0.79), South Africa (0.75) lead |
+| H5 *(bonus)* | Geographic origin affects influencer engagement | YouTube | Median by Country | ✅ Brazil (1.12), Turkey (0.79), Italy (0.72) lead |
 | H6 *(bonus)* | Conversion rate varies by time of day and day of week | A/B Test | Conversion heatmap | ✅ Saturday 5am (5.68%), Mon–Tue 14–16:00 consistently strong |
 
 Full details in `01_Master_File/hypotheses.md`

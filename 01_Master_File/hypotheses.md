@@ -83,7 +83,7 @@
 - **Dataset:** YouTube API (3,848 channels)
 - **Filter:** Minimum 10 channels per country (excludes 'Unknown' group)
 - **Test:** Median comparison across countries with sufficient sample size
-- **Result:** Confirmed — Top countries: **Brazil (1.12), Turkey (0.79), South Africa (0.75)**
+- **Result:** Confirmed — Top countries: **Brazil (1.12), Turkey (0.79), Italy (0.72)**
 - **Pattern:** All top countries are dominated by nano/micro creators in Fashion, Lifestyle, and Beauty niches — the same pattern seen in H1 and H2 at a country level
 - **Why it matters:** For brands targeting international markets, country of origin is a meaningful filter. Nano creators in these markets outperform global averages.
 
