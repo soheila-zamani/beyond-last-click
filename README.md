@@ -12,7 +12,7 @@
 - **Nano creators deliver 2.7× the engagement per subscriber** of mega creators (Kruskal-Wallis, p < 0.001)
 - **Paid ads convert at 1.4× the rate of organic** — +43% lift, statistically significant on 588K users (chi-square)
 - **Saturday 5–7am and Monday–Tuesday 14–16:00** are the highest-converting time windows
-- **Brazil, Turkey, and South Africa** lead engagement medians across 82 countries — most influencer plans skip them
+- **Brazil, Turkey, and South Africa** lead median engagement among the 24 countries with at least 10 channels (channels with 1,000+ subscribers) — markets worth testing in influencer plans
 
 ---
 
@@ -42,7 +42,7 @@ This project analyses two real datasets to test that concern from two angles: ho
 
 | # | Dataset | Source | Rows | Scope |
 |---|---|---|---|---|
-| 1 | YouTube Influencer Dataset | YouTube Data API v3 | 7,281 raw → **3,848 filtered** | 4 tiers, 9 niches, 82 countries |
+| 1 | YouTube Influencer Dataset | YouTube Data API v3 | 7,281 raw → **3,848 filtered** | 4 tiers, 9 niches, 71 countries |
 | 2 | Marketing A/B Test | Kaggle (FavioVázquez) | **588,101 users** | Paid ad vs organic conversion |
 
 > ⚠️ Data files are not uploaded to GitHub. See `02_Datasets/README.md` for sources and reproduction steps.
